@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Lonely part Design */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: #F44336;
+}
+
+/* End of lonely design */
+
+#split-Page {
+    display: flex;
+    flex-direction: column;
+}
+
+#left-part, #right-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left Part Design */
+#left-part {
+    height: 220px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/pic1.jpg');
+    background-size: cover;
+}
+
+#left-part .copy {
+    color: white;
+    text-align: center;
+}
+
+#left-part .copy p {
+    padding: 2rem;
+}
+
+#left-part h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 9px;
+}
+
+#left-part p {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+/* End of left part design */
+
+/* Right part Design */
+
+#right-part .copy {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#right-part .copy .main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
+}
+
+#right-part .copy .main-logo h3 {
+    letter-spacing: 2px;
+}
+
+#right-part .copy p {
+    margin: 1.5rem;
+    font-size: 0.87rem;
+}
+
+#right-part form {
+    width: 328px;
+}
+/* End of right part design */
+
+/* Form design */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 1em;
+    /* margin-bottom: 1.25rem; */
+    font-size: 0.875rem;
+}
+
+.input-container {
+    margin-top: 15px;
+}
+
+.input-container label {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form p {
+    margin-top: 10px;
+}
+/* End of form design */
+
+.signin-btn {
+    display: block;
+    width: 100%;
+    background-color: #F44336;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.signin-btn:hover {
+    background: #ad190f;
+}
+
+/* Media query design */
+@media screen and (min-width: 900px) {
+    #split-Page {
+        flex-direction: row;
+        height: 100vh;
+
+    }
+    #left-part,
+    #right-part {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

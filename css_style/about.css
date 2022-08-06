@@ -1,0 +1,66 @@
+@import url(footerStyle.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 180px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: rgb(46, 42, 42);
+}
+
+#wrapper {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#wrapper h1 {
+    display: inline-block;
+    font-size: 45px;
+    color: #F44336;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #F44336;
+}
+
+#wrapper .our_team {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#wrapper .our_team .team_member {
+    width: 270px;
+    margin: 10px;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+}
+
+#wrapper .our_team .team_member h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin: 15px 0 0;
+    padding-bottom: 10px;
+}
+
+#wrapper .our_team .team_member span {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#wrapper .our_team .team_member p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}

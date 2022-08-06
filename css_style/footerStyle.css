@@ -1,0 +1,188 @@
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 80px;
+    background-color: rgb(46, 42, 42);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+footer #container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer #container .sec {
+    margin-right: 30px;
+}
+
+footer #container .sec.aboutUs {
+    width: 40%;
+}
+
+footer #container .sec.aboutUs h2 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #F44336;
+}
+
+footer #container .aboutUs {
+    width: 40%;
+}
+
+footer #container h2 {
+    position: relative;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    color: #999;
+    font-size: 1rem;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social img {
+    height: 20px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #222;
+}
+
+.social li a:hover {
+    background: #f00;
+}
+
+.Services {
+    position: relative;
+    width: 25%;
+}
+
+.Services ul li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.Services ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.Services ul li a:hover {
+    color: #fff;
+    background-color: rgb(46, 42, 42);
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact #info {
+    position: relative;
+}
+
+.contact #info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact #info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact #info li span {
+    color: #999;
+}
+
+.contact #info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact #info li a:hover {
+    color: white;
+    background-color: rgb(46, 42, 42);
+}
+
+#info img {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+#copyrightText {
+    width: 100%;
+    background-color: rgb(46, 42, 42);
+    padding: 0 100px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #999;
+}
+
+/* Making Footer Responsive */
+@media (max-width: 990px) {
+    footer {
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    footer #container {
+        flex-direction: column;
+    }
+    footer #container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer #container .sec.aboutUs,
+    .Services,
+    .contact {
+        width: 100%;
+    }
+    .social img {
+        height: 15px;
+    }
+    .social li a {
+        height: 35px;
+        width: 35px;
+        margin-left: 20px;
+    }
+}
+
+/* End of the making responsive */

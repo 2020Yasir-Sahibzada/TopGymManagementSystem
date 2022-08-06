@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: calc(0.7vw + 2.2rem);
+    margin-right: 10px;
+}
+
+
+/* Spliting Page into two Part Design */
+#split-Page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#left-Part, #right-Part {
+    position: relative;
+    height: 100vh;
+}
+
+#left-Part {
+    background-color: rgb(46, 42, 42);
+}
+/* End of Spliting Page into two Part Design */
+
+/* Left Part Design */
+
+
+/* Service part Design */
+#service {
+    width: auto;
+    padding: 10px;
+    margin-left: 50px;
+    transform: translateY(35%);
+}
+
+#service h1 {
+    color: white;
+    font-size: calc(0.6vw + 2.8rem);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#service h2 {
+    color: white;
+    font-size: calc(0.4vw + 1.6rem);
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#a li {
+    color: white;
+    font-size: calc(0.6vw + 1.2rem);
+    margin-left: 40px;
+}
+
+#a li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#a li a:hover {
+    color: #fff;
+    background-color: rgb(46, 42, 42);
+}
+/* End of Service part design */
+/* End of Left Part Design */
+
+/* Right Part Design */
+#right-Part {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#right-Part .imgBox {
+    background: url('../img/Red7.jpg');
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 50vh;
+}
+#right-Part .imgBox:nth-child(2) {
+    background: url('../img/Red6.jpg');
+    background-size: cover;
+}
+#right-Part .imgBox:nth-child(3) {
+    background: url('../img/Red5.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+#right-Part #imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* End of the right part design */
+
+
+/* Making Responsive Main Page */
+@media (max-width: 1060px) {
+    header {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 990px) {
+    #split-Page {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    #right-Part .imgBox {
+        width: 100%;
+        height: 40vh;
+    }
+    header {
+        padding: 30px;
+    }
+}
+
+/* End of making responsive main page */

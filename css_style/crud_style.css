@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 42, 42);
+}
+
+#h2 {
+    color: white;
+    font-size: 30px;
+}
+
+
+/* Table Design */
+.contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#table-box {
+    position: relative;
+    width: 840px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: white;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 20px;
+    border: 0px solid grey;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+    font-family: 'PT Sans';
+}
+
+table, th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: red;
+    color: wheat;
+}
+
+td:last-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+tr:hover {
+    background-color: lightgray;
+    transform: scale(1.01);
+}
+
+/* Make Responsive table */
+@media (max-width : 830px) {
+    header {
+        padding: 20px;
+    }
+    #table-box {
+        width: 85%;
+    }
+    tr {
+        font-size: 13px;
+    }
+}
+
+@media (max-width : 500px) {
+    header {
+        padding: 10px;
+    }
+    tr {
+        font-size: 12px;
+    }
+    
+}
+
+/* button design */
+.btn {
+    padding: 10px 20px 10px 20px;
+    background-color: red;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* End of making Responsive */
+/* End of Table Design */
